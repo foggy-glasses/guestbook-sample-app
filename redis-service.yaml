@@ -5,10 +5,10 @@ metadata:
   labels:
     app: guestbook-app
 spec:
+  type: ClusterIP
   selector:
     name: redis-db
     app: guestbook-app
   ports:
   - port: 6379
     targetPort: 6379
-    type: ClusterIP
