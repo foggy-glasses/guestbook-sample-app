@@ -4,10 +4,10 @@ metadata:
   name: frontend-service
   app: guestbook-app
 spec:
+  type: LoadBalancer
   selector:
     name: frontend
     app: guestbook-app
   ports:
   - port: 80
     targetPort: 80
-    type: LoadBalancer
